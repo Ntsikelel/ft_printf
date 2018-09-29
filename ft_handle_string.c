@@ -6,7 +6,7 @@
 /*   By: nmetseem <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/05 15:40:35 by nmetseem          #+#    #+#             */
-/*   Updated: 2018/09/24 17:18:23 by nmetseem         ###   ########.fr       */
+/*   Updated: 2018/09/29 14:54:40 by nmetseem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,12 @@ int			ft_handle_string(va_list argptr, const char *str, int *ind)
 	int		pad;
 	int		len;
 
-	ft_shift(str, ind);
 	if (g_flag->set == 1)
 	{
 		len = ft_handle_wstring(argptr, str, ind);
 		return (len);
 	}
+	ft_shift(str, ind);
 	temp = va_arg(argptr, char *);
 	if (!temp)
 	{

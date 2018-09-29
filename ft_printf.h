@@ -6,7 +6,7 @@
 /*   By: nmetseem <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/02 13:11:27 by nmetseem          #+#    #+#             */
-/*   Updated: 2018/09/24 18:00:59 by nmetseem         ###   ########.fr       */
+/*   Updated: 2018/09/29 15:02:56 by nmetseem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 # include <stdarg.h>
 # define FLOAT_PREC 1000000
 
-# define \x1b[31m  RED
-# define \x1b[32m  GREEN
-# define \x1b[33m  YELLOW
-# define \x1b[34m  BLUE
-# define \x1b[35m  MAGENTA
-# define \x1b[36m  CYAN
-# define \x1b[37m  WHITE  
-# define \x1b[0m  RESET
+# define RED \x1b[31m
+# define GREEN \x1b[32m
+# define YELLOW \x1b[33m
+# define BLUE \x1b[34m
+# define MAGENTA \x1b[35m
+# define CYAN \x1b[36m
+# define WHITE \x1b[37m
+# define RESET \x1b[0m
 # include <wchar.h>
 
 typedef struct	s_padd_handle
